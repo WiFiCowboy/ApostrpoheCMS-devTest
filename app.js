@@ -23,5 +23,17 @@ var apos = require("apostrophe")({
       viewsFolderFallback: path.join(__dirname, "views"),
     },
     "fancy-button-widgets": {},
+    "apostrophe-pages": {
+      types: [
+        {
+          name: "default",
+          label: "Default",
+        },
+        {
+          name: "home",
+          label: "Home",
+        },
+      ],
+    },
   },
 });
