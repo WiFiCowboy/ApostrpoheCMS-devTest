@@ -1,0 +1,8 @@
+{# lib/modules/apostrophe-pages/views/default.html #}
+{% block main %}
+  <div class="main-content">
+    {{ apos.singleton(data.page, 'textBlock', 'apostrophe-rich-text', {
+      toolbar: [ 'Bold', 'Italic' ]
+    }) }}
+  </div>
+{% endblock %}
