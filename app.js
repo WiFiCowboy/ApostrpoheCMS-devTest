@@ -24,6 +24,16 @@ var apos = require("apostrophe")({
     },
     "fancy-button-widgets": {},
     "apostrophe-pages": {
+      filters: {
+        // Grab our ancestor pages, with two levels of subpages
+        ancestors: {
+          children: {
+            depth: 2,
+          },
+        },
+        // We usually want children of the current page, too
+        children: true,
+      },
       types: [
         {
           name: "default",
